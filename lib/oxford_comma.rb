@@ -6,12 +6,8 @@ def oxford_comma(array)
     result = array.join(" and ")
     return result
   elsif array.length >= 3
-    count = 0
-      while count <= array.length
-        array[-1] = ("and #{array[-1]}")
-        result = array.join(", ")
-        count += 1
-      end
+      array[-1] = ("and #{array[-1]}")
+      result = array.join(", ")
       return result
   end
 
