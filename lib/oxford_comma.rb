@@ -9,8 +9,8 @@ def oxford_comma(array)
     count = 0
       while count <= array.length
         result = array.join(", ")
-        count += 1
         break if count == array.length - 1
+        count += 1
       end
       result = array.join(" and #{array[-1]}")
       return result
